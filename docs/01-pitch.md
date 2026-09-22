@@ -1,25 +1,14 @@
-# Pitch
+# 문제
+매일 지출을 기록하고 싶지만, 그때마다 앱을 여는 게 부담스러워 결국 그만두게 됨.
 
-<!-- Under 500 words. -->
+# 누가 또 겪나
+가계부를 시도했다가 며칠 못 가 그만둔 20대. 자동 연동 가계부(토스 등)로는 확인만 될 뿐 소비 조절 효과를 못 느낌.
 
-## Problem
+# 기존 해결책
+모두의 가계부, 간편 가계부 등은 입력 자체는 빠르게 만들었지만, 여전히 앱을 열어야 기록할 수 있음. 자동 연동 가계부는 입력은 필요 없지만 손으로 남기는 과정이 빠지면서 조절 효과도 함께 사라짐.
 
-<!-- one scene from your own life: when, what you did, what went wrong -->
+# 해결책
+잠금화면에서 앱을 열지 않고 버튼 한 번으로 금액만 남김 → 매일 정해진 예산이 충전되고 안 쓴 만큼 다음 날로 이월 → 오늘 남은 예산이 위젯에 표시되고, 초과하면 빨간색으로 표시.
 
-## Who else?
-
-<!-- one person other than you: what they did the last time it happened -->
-
-## Existing solutions
-
-<!-- what people use today, and why it isn't enough -->
-
-## Solution
-
-<!-- the core flow as a sketch, and where its data comes from -->
-
-![](sketch.png)
-
-## No-gos
-
-<!-- at least three things worth doing that you won't -->
+# 하지 않는 것
+자동 지출 감지 없음 (직접 기록해야 함). 카테고리별 세부 분석 없음. 소셜/랭킹 기능 없음 (1차 버전 제외).
