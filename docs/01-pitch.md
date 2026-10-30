@@ -1,25 +1,21 @@
-# Pitch
-
-<!-- Under 500 words. -->
+# 오늘예산
 
 ## Problem
-
-<!-- one scene from your own life: when, what you did, what went wrong -->
+가계부에 기록된 이번 달 총액만 보면 오늘은 얼마까지 써도 되는지 판단하기 어렵다. 기록을 남길 때 사용처를 적지 않으면 나중에 금액만 보고 무엇을 샀는지 떠올리기 어렵다.
 
 ## Who else?
-
-<!-- one person other than you: what they did the last time it happened -->
+가계부를 며칠 쓰다 멈춘 또래를 첫 인터뷰 대상으로 삼는다. 자동 연동 기록은 확인하지만 소비 조절에는 도움이 덜 된다는 기존 관찰을, 최근 실제 사례로 확인할 예정이다.
 
 ## Existing solutions
-
-<!-- what people use today, and why it isn't enough -->
+자동 연동 가계부는 거래 금액을 모아 보여 주지만 오늘 남은 개인 예산을 기준으로 다음 지출을 판단하게 해 주지는 않는다. 수기 가계부는 사용처를 남길 수 있지만, 매번 내역을 찾고 분류하는 수고가 든다.
 
 ## Solution
+하루 예산을 정한다 → 오늘 쓴 금액과 사용처를 한 줄로 기록한다 → 남은 예산과 오늘 기록 목록을 바로 확인한다 → 쓰지 않은 금액은 다음 날 예산으로 이월된다.
 
-<!-- the core flow as a sketch, and where its data comes from -->
-
-![](sketch.png)
+저장 데이터는 사용자가 입력한 하루 예산과 지출 내역이다. 데이터는 기기 안에 보관한다.
 
 ## No-gos
-
-<!-- at least three things worth doing that you won't -->
+- 카드·은행 자동 연동
+- 카테고리별 통계와 월간 분석
+- 계정, 클라우드 동기화, 소셜 기능
+- 앱을 열지 않고 잠금 화면에서 지출을 확정하는 기능
