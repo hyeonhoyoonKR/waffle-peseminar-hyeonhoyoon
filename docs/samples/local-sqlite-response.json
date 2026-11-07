@@ -1,0 +1,22 @@
+{
+  "source": "SQLite local write/read proof; example values, not personal spending data",
+  "day": "2026-10-30",
+  "carryInWon": 18000,
+  "allowanceWon": 30000,
+  "spentWon": 15500,
+  "remainingWon": 32500,
+  "expenses": [
+    {
+      "id": "demo-3",
+      "amountWon": 11000,
+      "purpose": "점심 식사",
+      "createdAtEpochMs": 1793365200000
+    },
+    {
+      "id": "demo-2",
+      "amountWon": 4500,
+      "purpose": "커피",
+      "createdAtEpochMs": 1793361600000
+    }
+  ]
+}
