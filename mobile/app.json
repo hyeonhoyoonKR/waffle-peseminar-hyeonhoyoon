@@ -1,6 +1,6 @@
 {
   "expo": {
-    "name": "오늘예산",
+    "name": "DayMark",
     "slug": "oneul-budget",
     "version": "1.0.0",
     "orientation": "portrait",
@@ -22,6 +22,10 @@
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "plugins": [
+      "expo-sqlite",
+      "expo-status-bar"
+    ]
   }
 }
