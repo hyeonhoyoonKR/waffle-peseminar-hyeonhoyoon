@@ -6,6 +6,8 @@
   "main": "index.ts",
   "dependencies": {
     "expo": "^58.0.26",
+    "expo-font": "~58.0.12",
+    "expo-linear-gradient": "~58.0.4",
     "expo-sqlite": "~58.0.18",
     "expo-status-bar": "~58.0.5",
     "react": "19.3.0",
@@ -17,6 +19,7 @@
   },
   "scripts": {
     "start": "expo start",
+    "test:settlement": "node --test settlement.test.cjs",
     "typecheck": "tsc --noEmit",
     "android": "expo start --android",
     "ios": "expo start --ios",

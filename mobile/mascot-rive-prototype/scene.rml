@@ -1,0 +1,187 @@
+<Rive version="1" kind="fragment">
+    <Artboard defaultStateMachineId="0:7" styleId="0:5" width="500" height="500" name="Nalmoa Rabbit" id="0:2">
+        <LayoutComponentStyle name="Artboard Style" id="0:5"/>
+        <Fill name="Warm Off-white Background">
+            <SolidColor colorValue="FFFFF9F2" name="Warm Ivory"/>
+        </Fill>
+
+        <!-- Rive paints the first sibling in front. Keep the face, scarf, and paws in front of the torso; the tail stays behind it. -->
+        <Image x="250" y="250" scaleX="0.065" scaleY="0.065" opacity="0" assetId="0:74" name="Mouth Happy" id="0:34"/>
+        <Image x="250" y="250" scaleX="0.07" scaleY="0.07" assetId="0:73" name="Mouth Idle" id="0:33"/>
+        <Image x="250" y="226" scaleX="0.086" scaleY="0.073" opacity="0" assetId="0:72" name="Eyes Closed" id="0:32"/>
+        <Image x="250" y="226" scaleX="0.105" scaleY="0.085" assetId="0:71" name="Eyes Open" id="0:31"/>
+        <Image x="250" y="160" scaleX="0.08" scaleY="0.08" assetId="0:69" name="Hair" id="0:29" originX="0.5" originY="0.5"/>
+        <Image x="250" y="221" scaleX="0.22" scaleY="0.22" assetId="0:60" name="Head" id="0:20" originX="0.5" originY="0.5"/>
+        <Image x="198" y="146" scaleX="0.24" scaleY="0.24" assetId="0:61" name="Ear Left" id="0:21" originX="0.5" originY="0.9"/>
+        <Image x="302" y="146" scaleX="0.18" scaleY="0.18" assetId="0:62" name="Ear Right" id="0:22" originX="0.5" originY="0.9"/>
+        <Image x="250" y="312" scaleX="0.13" scaleY="0.13" assetId="0:70" name="Scarf" id="0:30" originX="0.5" originY="0.1"/>
+        <Image x="214" y="335" scaleX="0.15" scaleY="0.13" assetId="0:64" name="Front Paw Left" id="0:24" originX="0.5" originY="0.1"/>
+        <Image x="286" y="335" scaleX="0.15" scaleY="0.13" assetId="0:65" name="Front Paw Right" id="0:25" originX="0.5" originY="0.1"/>
+        <Image x="174" y="437" scaleX="0.13" scaleY="0.13" assetId="0:66" name="Back Paw Left" id="0:26"/>
+        <Image x="326" y="437" scaleX="0.13" scaleY="0.13" assetId="0:67" name="Back Paw Right" id="0:27"/>
+        <Image x="250" y="375" scaleX="0.30" scaleY="0.30" assetId="0:63" name="Body" id="0:23" originX="0.5" originY="0.9"/>
+        <Image x="350" y="388" scaleX="0.08" scaleY="0.08" assetId="0:68" name="Tail" id="0:28" originX="0.5" originY="0.5"/>
+
+        <StateMachine name="Rabbit Idle" id="0:7">
+            <StateMachineLayer name="Idle Layer" id="0:8">
+                <AnyState x="200" y="-120"/>
+                <ExitState x="400" y="-120"/>
+                <EntryState>
+                    <StateTransition stateToId="0:12"/>
+                </EntryState>
+                <AnimationState x="200" animationId="0:6" id="0:12"/>
+            </StateMachineLayer>
+        </StateMachine>
+
+        <LinearAnimation loopValue="loop" duration="180" fps="60" name="Idle — parts in motion" id="0:6">
+            <KeyedObject objectId="0:23">
+                <KeyedProperty property="y" id="0:100">
+                    <KeyFrameDouble value="375" interpolationType="cubic" frame="0"><CubicEaseInterpolator x1="0.42" y1="0" x2="0.58" y2="1"/></KeyFrameDouble>
+                    <KeyFrameDouble value="371" interpolationType="cubic" frame="45"><CubicEaseInterpolator x1="0.42" y1="0" x2="0.58" y2="1"/></KeyFrameDouble>
+                    <KeyFrameDouble value="375" interpolationType="cubic" frame="90"><CubicEaseInterpolator x1="0.42" y1="0" x2="0.58" y2="1"/></KeyFrameDouble>
+                    <KeyFrameDouble value="379" interpolationType="cubic" frame="135"><CubicEaseInterpolator x1="0.42" y1="0" x2="0.58" y2="1"/></KeyFrameDouble>
+                    <KeyFrameDouble value="375" interpolationType="cubic" frame="180"><CubicEaseInterpolator x1="0.42" y1="0" x2="0.58" y2="1"/></KeyFrameDouble>
+                </KeyedProperty>
+            </KeyedObject>
+
+            <KeyedObject objectId="0:20">
+                <KeyedProperty property="y" id="0:101">
+                    <KeyFrameDouble value="221" interpolationType="cubic" frame="0"><CubicEaseInterpolator x1="0.42" y1="0" x2="0.58" y2="1"/></KeyFrameDouble>
+                    <KeyFrameDouble value="217" interpolationType="cubic" frame="45"><CubicEaseInterpolator x1="0.42" y1="0" x2="0.58" y2="1"/></KeyFrameDouble>
+                    <KeyFrameDouble value="221" interpolationType="cubic" frame="90"><CubicEaseInterpolator x1="0.42" y1="0" x2="0.58" y2="1"/></KeyFrameDouble>
+                    <KeyFrameDouble value="224" interpolationType="cubic" frame="135"><CubicEaseInterpolator x1="0.42" y1="0" x2="0.58" y2="1"/></KeyFrameDouble>
+                    <KeyFrameDouble value="221" interpolationType="cubic" frame="180"><CubicEaseInterpolator x1="0.42" y1="0" x2="0.58" y2="1"/></KeyFrameDouble>
+                </KeyedProperty>
+                <KeyedProperty property="rotation" id="0:102">
+                    <KeyFrameDouble value="0" interpolationType="cubic" frame="0"><CubicEaseInterpolator x1="0.42" y1="0" x2="0.58" y2="1"/></KeyFrameDouble>
+                    <KeyFrameDouble value="-0.025" interpolationType="cubic" frame="45"><CubicEaseInterpolator x1="0.42" y1="0" x2="0.58" y2="1"/></KeyFrameDouble>
+                    <KeyFrameDouble value="0" interpolationType="cubic" frame="90"><CubicEaseInterpolator x1="0.42" y1="0" x2="0.58" y2="1"/></KeyFrameDouble>
+                    <KeyFrameDouble value="0.025" interpolationType="cubic" frame="135"><CubicEaseInterpolator x1="0.42" y1="0" x2="0.58" y2="1"/></KeyFrameDouble>
+                    <KeyFrameDouble value="0" interpolationType="cubic" frame="180"><CubicEaseInterpolator x1="0.42" y1="0" x2="0.58" y2="1"/></KeyFrameDouble>
+                </KeyedProperty>
+            </KeyedObject>
+
+            <KeyedObject objectId="0:21">
+                <KeyedProperty property="rotation" id="0:103">
+                    <KeyFrameDouble value="-0.02" interpolationType="cubic" frame="0"><CubicEaseInterpolator x1="0.42" y1="0" x2="0.58" y2="1"/></KeyFrameDouble>
+                    <KeyFrameDouble value="-0.12" interpolationType="cubic" frame="45"><CubicEaseInterpolator x1="0.42" y1="0" x2="0.58" y2="1"/></KeyFrameDouble>
+                    <KeyFrameDouble value="-0.025" interpolationType="cubic" frame="90"><CubicEaseInterpolator x1="0.42" y1="0" x2="0.58" y2="1"/></KeyFrameDouble>
+                    <KeyFrameDouble value="0.06" interpolationType="cubic" frame="135"><CubicEaseInterpolator x1="0.42" y1="0" x2="0.58" y2="1"/></KeyFrameDouble>
+                    <KeyFrameDouble value="-0.02" interpolationType="cubic" frame="180"><CubicEaseInterpolator x1="0.42" y1="0" x2="0.58" y2="1"/></KeyFrameDouble>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="0:22">
+                <KeyedProperty property="rotation" id="0:104">
+                    <KeyFrameDouble value="0.02" interpolationType="cubic" frame="0"><CubicEaseInterpolator x1="0.42" y1="0" x2="0.58" y2="1"/></KeyFrameDouble>
+                    <KeyFrameDouble value="0.08" interpolationType="cubic" frame="45"><CubicEaseInterpolator x1="0.42" y1="0" x2="0.58" y2="1"/></KeyFrameDouble>
+                    <KeyFrameDouble value="0.025" interpolationType="cubic" frame="90"><CubicEaseInterpolator x1="0.42" y1="0" x2="0.58" y2="1"/></KeyFrameDouble>
+                    <KeyFrameDouble value="-0.09" interpolationType="cubic" frame="135"><CubicEaseInterpolator x1="0.42" y1="0" x2="0.58" y2="1"/></KeyFrameDouble>
+                    <KeyFrameDouble value="0.02" interpolationType="cubic" frame="180"><CubicEaseInterpolator x1="0.42" y1="0" x2="0.58" y2="1"/></KeyFrameDouble>
+                </KeyedProperty>
+            </KeyedObject>
+
+            <KeyedObject objectId="0:24">
+                <KeyedProperty property="rotation" id="0:105">
+                    <KeyFrameDouble value="0.02" interpolationType="cubic" frame="0"><CubicEaseInterpolator x1="0.42" y1="0" x2="0.58" y2="1"/></KeyFrameDouble>
+                    <KeyFrameDouble value="-0.06" interpolationType="cubic" frame="45"><CubicEaseInterpolator x1="0.42" y1="0" x2="0.58" y2="1"/></KeyFrameDouble>
+                    <KeyFrameDouble value="0.02" interpolationType="cubic" frame="90"><CubicEaseInterpolator x1="0.42" y1="0" x2="0.58" y2="1"/></KeyFrameDouble>
+                    <KeyFrameDouble value="0.07" interpolationType="cubic" frame="135"><CubicEaseInterpolator x1="0.42" y1="0" x2="0.58" y2="1"/></KeyFrameDouble>
+                    <KeyFrameDouble value="0.02" interpolationType="cubic" frame="180"><CubicEaseInterpolator x1="0.42" y1="0" x2="0.58" y2="1"/></KeyFrameDouble>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="0:25">
+                <KeyedProperty property="rotation" id="0:106">
+                    <KeyFrameDouble value="-0.02" interpolationType="cubic" frame="0"><CubicEaseInterpolator x1="0.42" y1="0" x2="0.58" y2="1"/></KeyFrameDouble>
+                    <KeyFrameDouble value="0.06" interpolationType="cubic" frame="45"><CubicEaseInterpolator x1="0.42" y1="0" x2="0.58" y2="1"/></KeyFrameDouble>
+                    <KeyFrameDouble value="-0.02" interpolationType="cubic" frame="90"><CubicEaseInterpolator x1="0.42" y1="0" x2="0.58" y2="1"/></KeyFrameDouble>
+                    <KeyFrameDouble value="-0.07" interpolationType="cubic" frame="135"><CubicEaseInterpolator x1="0.42" y1="0" x2="0.58" y2="1"/></KeyFrameDouble>
+                    <KeyFrameDouble value="-0.02" interpolationType="cubic" frame="180"><CubicEaseInterpolator x1="0.42" y1="0" x2="0.58" y2="1"/></KeyFrameDouble>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="0:28">
+                <KeyedProperty property="rotation" id="0:107">
+                    <KeyFrameDouble value="0" interpolationType="cubic" frame="0"><CubicEaseInterpolator x1="0.42" y1="0" x2="0.58" y2="1"/></KeyFrameDouble>
+                    <KeyFrameDouble value="0.14" interpolationType="cubic" frame="45"><CubicEaseInterpolator x1="0.42" y1="0" x2="0.58" y2="1"/></KeyFrameDouble>
+                    <KeyFrameDouble value="0.02" interpolationType="cubic" frame="90"><CubicEaseInterpolator x1="0.42" y1="0" x2="0.58" y2="1"/></KeyFrameDouble>
+                    <KeyFrameDouble value="-0.14" interpolationType="cubic" frame="135"><CubicEaseInterpolator x1="0.42" y1="0" x2="0.58" y2="1"/></KeyFrameDouble>
+                    <KeyFrameDouble value="0" interpolationType="cubic" frame="180"><CubicEaseInterpolator x1="0.42" y1="0" x2="0.58" y2="1"/></KeyFrameDouble>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="0:29">
+                <KeyedProperty property="rotation" id="0:108">
+                    <KeyFrameDouble value="0" interpolationType="cubic" frame="0"><CubicEaseInterpolator x1="0.42" y1="0" x2="0.58" y2="1"/></KeyFrameDouble>
+                    <KeyFrameDouble value="0.04" interpolationType="cubic" frame="45"><CubicEaseInterpolator x1="0.42" y1="0" x2="0.58" y2="1"/></KeyFrameDouble>
+                    <KeyFrameDouble value="-0.025" interpolationType="cubic" frame="90"><CubicEaseInterpolator x1="0.42" y1="0" x2="0.58" y2="1"/></KeyFrameDouble>
+                    <KeyFrameDouble value="0.035" interpolationType="cubic" frame="135"><CubicEaseInterpolator x1="0.42" y1="0" x2="0.58" y2="1"/></KeyFrameDouble>
+                    <KeyFrameDouble value="0" interpolationType="cubic" frame="180"><CubicEaseInterpolator x1="0.42" y1="0" x2="0.58" y2="1"/></KeyFrameDouble>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="0:30">
+                <KeyedProperty property="rotation" id="0:109">
+                    <KeyFrameDouble value="0" interpolationType="cubic" frame="0"><CubicEaseInterpolator x1="0.42" y1="0" x2="0.58" y2="1"/></KeyFrameDouble>
+                    <KeyFrameDouble value="-0.035" interpolationType="cubic" frame="45"><CubicEaseInterpolator x1="0.42" y1="0" x2="0.58" y2="1"/></KeyFrameDouble>
+                    <KeyFrameDouble value="0.01" interpolationType="cubic" frame="90"><CubicEaseInterpolator x1="0.42" y1="0" x2="0.58" y2="1"/></KeyFrameDouble>
+                    <KeyFrameDouble value="0.035" interpolationType="cubic" frame="135"><CubicEaseInterpolator x1="0.42" y1="0" x2="0.58" y2="1"/></KeyFrameDouble>
+                    <KeyFrameDouble value="0" interpolationType="cubic" frame="180"><CubicEaseInterpolator x1="0.42" y1="0" x2="0.58" y2="1"/></KeyFrameDouble>
+                </KeyedProperty>
+            </KeyedObject>
+
+            <KeyedObject objectId="0:31">
+                <KeyedProperty property="opacity" id="0:110">
+                    <KeyFrameDouble value="1" interpolationType="hold" frame="0"/>
+                    <KeyFrameDouble value="1" interpolationType="hold" frame="80"/>
+                    <KeyFrameDouble value="0" interpolationType="hold" frame="82"/>
+                    <KeyFrameDouble value="0" interpolationType="hold" frame="88"/>
+                    <KeyFrameDouble value="1" interpolationType="hold" frame="90"/>
+                    <KeyFrameDouble value="1" interpolationType="hold" frame="180"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="0:32">
+                <KeyedProperty property="opacity" id="0:111">
+                    <KeyFrameDouble value="0" interpolationType="hold" frame="0"/>
+                    <KeyFrameDouble value="0" interpolationType="hold" frame="80"/>
+                    <KeyFrameDouble value="1" interpolationType="hold" frame="82"/>
+                    <KeyFrameDouble value="1" interpolationType="hold" frame="88"/>
+                    <KeyFrameDouble value="0" interpolationType="hold" frame="90"/>
+                    <KeyFrameDouble value="0" interpolationType="hold" frame="180"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="0:33">
+                <KeyedProperty property="opacity" id="0:112">
+                    <KeyFrameDouble value="1" interpolationType="hold" frame="0"/>
+                    <KeyFrameDouble value="1" interpolationType="hold" frame="116"/>
+                    <KeyFrameDouble value="0" interpolationType="hold" frame="120"/>
+                    <KeyFrameDouble value="0" interpolationType="hold" frame="138"/>
+                    <KeyFrameDouble value="1" interpolationType="hold" frame="144"/>
+                    <KeyFrameDouble value="1" interpolationType="hold" frame="180"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="0:34">
+                <KeyedProperty property="opacity" id="0:113">
+                    <KeyFrameDouble value="0" interpolationType="hold" frame="0"/>
+                    <KeyFrameDouble value="0" interpolationType="hold" frame="116"/>
+                    <KeyFrameDouble value="1" interpolationType="hold" frame="120"/>
+                    <KeyFrameDouble value="1" interpolationType="hold" frame="138"/>
+                    <KeyFrameDouble value="0" interpolationType="hold" frame="144"/>
+                    <KeyFrameDouble value="0" interpolationType="hold" frame="180"/>
+                </KeyedProperty>
+            </KeyedObject>
+        </LinearAnimation>
+    </Artboard>
+
+    <ImageAsset file="head.png" name="Head" id="0:60"/>
+    <ImageAsset file="ear_left.png" name="Ear Left" id="0:61"/>
+    <ImageAsset file="ear_right.png" name="Ear Right" id="0:62"/>
+    <ImageAsset file="body.png" name="Body" id="0:63"/>
+    <ImageAsset file="front_paw_left.png" name="Front Paw Left" id="0:64"/>
+    <ImageAsset file="front_paw_right.png" name="Front Paw Right" id="0:65"/>
+    <ImageAsset file="back_paw_left.png" name="Back Paw Left" id="0:66"/>
+    <ImageAsset file="back_paw_right.png" name="Back Paw Right" id="0:67"/>
+    <ImageAsset file="tail.png" name="Tail" id="0:68"/>
+    <ImageAsset file="hair.png" name="Hair" id="0:69"/>
+    <ImageAsset file="scarf.png" name="Scarf" id="0:70"/>
+    <ImageAsset file="eyes_open.png" name="Eyes Open" id="0:71"/>
+    <ImageAsset file="eyes_closed.png" name="Eyes Closed" id="0:72"/>
+    <ImageAsset file="mouth_idle.png" name="Mouth Idle" id="0:73"/>
+    <ImageAsset file="mouth_happy.png" name="Mouth Happy" id="0:74"/>
+</Rive>
